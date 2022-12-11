@@ -1,0 +1,197 @@
+:root {
+  --color-bg: hsl(30, 100%, 99%);
+  --theme-color: rgb(80, 80, 219);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+body > header {
+  min-height: 60px;
+  background-color: var(--color-bg);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, calc(var(--value) / 5));
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  top: 0;
+  z-index: 100;
+}
+body > header #liens {
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+  position: absolute;
+  background-color: inherit;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body > header #liens * {
+  margin: 0px;
+}
+body > header #liens > a {
+  color: rgb(25, 25, 25);
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.1s ease-in-out;
+}
+body > header #liens > a:hover {
+  transform: translateY(-2px);
+}
+body > header #liens > .left {
+  justify-self: flex-start;
+}
+body > header #liens > .right {
+  justify-self: flex-end;
+}
+body > main {
+  min-height: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+}
+body > main section#home-cover {
+  padding-top: 70px;
+  color: white;
+}
+body > main section#home-cover #page-welcome {
+  flex: 0 0 60%;
+}
+body > main section#home-cover #page-welcome > .hitbox > h1 {
+  font-size: 25pt;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-align: justify;
+  overflow-y: visible;
+  transition: transform 0.2s ease-in-out;
+}
+body > main section#home-cover #page-welcome > .hitbox > h2.subtitle {
+  margin: 0;
+  padding-bottom: 12pt;
+  font-size: 12pt;
+  transition: transform 0.2s ease-in-out;
+}
+body > main section#home-cover #page-welcome > .hitbox:hover > h1 {
+  transform: translate(10px, 0px);
+}
+body > main section#home-cover #page-welcome > .hitbox:hover > h2.subtitle {
+  transform: translate(15px, 0px);
+}
+body > main section#home-cover #page-welcome > p {
+  padding-bottom: 24pt;
+}
+body > main section#home-cover #page-welcome > a {
+  border: white 1px solid;
+  color: var(--theme-color);
+  background-color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+body > main section#home-cover #page-welcome > a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+body > main section#home-cover #book-pic {
+  margin-top: 50px;
+  justify-content: center;
+}
+body > main section#home-cover #book-pic > img {
+  aspect-ratio: initial;
+  margin-left: 50px;
+  margin-right: 50px;
+  transform-origin: center center;
+  transform: rotate(-3deg);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.264);
+  transition: transform 0.1s ease-in-out;
+}
+body > main section#home-cover #book-pic > img:hover {
+  transform: rotate(0deg);
+}
+body > main section#avis {
+  color: white;
+  margin-top: 40px;
+  text-align: right;
+}
+
+#blue-shape {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 0;
+  height: 600px;
+  background-color: var(--theme-color);
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 70%);
+          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 70%);
+  z-index: -5;
+}
+
+#blue-shape-bis {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  min-width: 0;
+  height: 600px;
+  background-color: var(--theme-color);
+  transform: translateY(-25%);
+  -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: -5;
+}
+
+.hashtag::before {
+  content: "#";
+  padding-right: 2px;
+  opacity: 0.8;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  #page-welcome {
+    flex-basis: 100% !important;
+  }
+  .container {
+    max-width: 540px;
+  }
+}/*# sourceMappingURL=style.css.map */

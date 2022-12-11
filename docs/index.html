@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P17WYJD9MP"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'G-P17WYJD9MP');
-	</script>
-	<meta charset="utf-8"/>	
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Mon Plombier et Jésus, 2022, de Michael de Albuquerque et Danièle Bernardin - Broché, 197 pages</title>	
-  </head>
-  <body>
-<script type="application/ld+json">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P17WYJD9MP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P17WYJD9MP');
+  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Plombier et Jésus, 2022, de Michael de Albuquerque et Danièle Bernardin - Broché, 197 pages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script type="application/ld+json">
 {
   "@context": "http://schema.org",
     "@type": ["Book", "Product"],
@@ -53,33 +56,64 @@
     "url":"https://www.amazon.fr/Mon-Plombier-J%C3%A9sus-Michael-Albuquerque/dp/B0BMW81R43/"
   }
 }
-</script>  
-	<h1>Mon Plombier et Jésus</h1>
-	<div>
-	<img src="2022-mon-plombier-et-jesus-couverture_low.jpg" alt="Couverture du livre Mon Plombier et Jésus" width="344" height="517"/>
-	</div>
-	<a href="https://www.amazon.fr/Mon-Plombier-J%C3%A9sus-Michael-Albuquerque/dp/B0BMW81R43/">Commander en ligne</a>
-    <p>
-	<h2>de Michael de Albuquerque, Danièle Bernardin - Broché, 197 pages </h2
-	</p>
-    <p>
-		Ce livre est l'autobiographie d'un jeune plombier, qui a rencontré Jésus et la foi dans des circonstances étonnantes et inattendues. Né en 1980 à Versailles, d'origine portugaise et espagnole, de famille très modeste: de mère couturière à domicile.
-	</p>
-    <p>
-		Plombier depuis 18 ans, après une enfance difficile, une scolarité chaotique, une vie affective riche mais décevante, de jour en jour, j'ai partagé ce qui m'était arrivé avec des proches, des amis, mais aussi des clients... De là est née une amitié avec Danièle qui me proposa d'écrire un livre sur cette fabuleuse aventure.
-	</p>
-    <p>
-		Avec le confinement, nous avons eu du temps et une réelle opportunité pour transmettre cette expérience par écrit, je fus sauvé par la foi et je veux témoigner, afin de donner aux lecteurs un message d'espoir.
-	</p>
-	<h2>Les avis critiques<h2>
-	<ul>
-		<li><a href="https://www.critiqueslibres.com/i.php/vcrit/63827">critiqueslibres</a> et le <a href="https://www.critiqueslibres.com/i.php/forum/forum/4/63827">forum</a></li>
-		<li><a href="https://www.rue-des-livres.com/livre/B0BMW81R43/mon-plombier-et-jesus.html">rue des livres</a></li>
-		<li><a href="https://www.critique-livre.fr/">critique-livre</a>
-	</ul>
-	<h2>En savoir plus</h2>
-	<p>
-		Pour contacter les auteurs : daniele (at) carsenat.net
-	</p>
-  </body>
+</script>
+  <header id="header">
+    <div id="liens" class="container">
+      <a href="#home-cover">maison</a>
+      <a href="#avis">avis</a>
+      <p class="right">ppp</p>
+    </div>
+  </header>
+  <main>
+    <div id="blue-shape"></div>
+    <section id="home-cover">
+      <div class="container">
+        <div class="row">
+          <div id="page-welcome">
+            <div class="hitbox">
+              <h1>Mon Plombier et Jesus</h1>
+              <h2 class="subtitle">Michael de Albuquerque</h2>
+            </div>
+
+            <p>
+              Plombier depuis 18 ans, après une enfance difficile, une scolarité chaotique, une vie
+              affective riche mais décevante, j'ai partagé mon histoire avec des proches, des amis, mais
+              aussi des clients... De là est née une amitié avec Danièle qui me proposa d'écrire un livre
+              sur cette fabuleuse aventure.
+            </p>
+            <a href="http://amazon.fr" target="_blank">Voir sur Amazon</a>
+            <a href="#avis" target="_blank">Avis</a>
+          </div>
+        </div>
+        <div class="row" id="book-pic">
+          <img src="/image.jpg" alt="image_livre">
+        </div>
+
+
+      </div>
+
+    </section>
+    <div id="blue-shape-bis"></div>
+    <section id="avis">
+      <div class="container">
+        <h2 class="avis-title hashtag">Les avis critiques</h2>
+      </div>
+
+
+
+      critiqueslibres et le forum
+      rue des livres
+
+
+
+    </section>
+
+    <script>
+      document.addEventListener("scroll", (e) => {
+        document.getElementById("header").style = `--value: ${Math.min(1, (window.pageYOffset / 40) ** 2).toString()};`;
+      })
+    </script>
+  </main>
+</body>
+
 </html>
